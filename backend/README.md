@@ -40,3 +40,9 @@ shop
 - npm install jsonwebtoken
 2) user.js
 3) verifyToken.js
+
+IV. router/product
+1) stripe.js
+2) product.js
+3) order.js
+4) cart.js
