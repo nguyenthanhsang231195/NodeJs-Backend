@@ -21,3 +21,22 @@ II. Test Api
 - POST: localhost:5000/api/user/userposttest
 - Chọn body -> raw -> JSON -> { "username": "sang"} -> SEND
 2) Folder backend/model
+
+III. Setup routers
+1) auth.js
+- Vào MongoDB tạo database {ví dụ:shop(nằm ở liên hết lúc khởi tạo link vào MongoDB)}
+- khi POST thành công sẽ có thư mục như sau:
+shop
+    - users:
+        _id:ObjectId(617f761566baf63eb22b845d)
+        username:"sang"
+        email:"nguyenthanhsang231195@gmail.com"
+        password:"123456"
+        isAdmin:false
+        createdAt:2021-11-01T05:07:33.877+00:00
+        updatedAt:2021-11-01T05:07:33.877+00:00
+        __v:0
+- npm install crypto-js
+- npm install jsonwebtoken
+2) user.js
+3) verifyToken.js
